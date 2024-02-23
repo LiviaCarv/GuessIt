@@ -5,11 +5,12 @@
     android:id="@+id/navigation"
     app:startDestination="@id/titleFragment">
 
+
     <fragment
         android:id="@+id/titleFragment"
         android:name="com.example.guessit.title.TitleFragment"
-        android:label="TitleFragment"
-        tools:layout="@layout/fragment_title">
+        android:label="fragment_title"
+        tools:layout="@layout/fragment_title" >
         <action
             android:id="@+id/action_titleFragment_to_gameFragment"
             app:destination="@id/gameFragment" />
@@ -32,5 +33,8 @@
             android:id="@+id/action_scoreFragment_to_gameFragment"
             app:destination="@id/gameFragment"
             app:popUpTo="@id/titleFragment"/>
+        <argument
+            android:name="score"
+            app:argType="integer" />
     </fragment>
 </navigation>

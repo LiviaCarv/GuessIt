@@ -6,8 +6,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/txt_the_word_is"
@@ -24,12 +23,12 @@
             style="@style/main_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="word"
             android:textColor="@color/main_title_green"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="word" />
 
         <Button
             android:id="@+id/btn_got_it"
