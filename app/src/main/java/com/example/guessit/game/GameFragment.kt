@@ -1,7 +1,6 @@
 package com.example.guessit.game
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -25,8 +24,6 @@ class GameFragment : Fragment() {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_game, container, false)
 
         // reference to GameViewModel
-        Log.i("GameFragment", "called ViewModelProvider")
-
         viewModel = ViewModelProvider(this).get(GameViewModel::class.java)
 
 
